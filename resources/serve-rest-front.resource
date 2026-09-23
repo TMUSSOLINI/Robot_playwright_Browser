@@ -1,5 +1,6 @@
 *** Settings ***
 Library    Browser
+Library    FakerLibrary
 
 *** Variables ***
 ${BROWSER}    chromium
@@ -18,5 +19,11 @@ Ir para o site Serve Rest Front
 
 
 Preencher os dados do novo usuário e cadastrar
-    Click    css=.btn-link
+    Click       css=.btn-link
+    ${EMAIL}    FakerLibrary.Email
+    Fill Text        css=input[data-testid='nome']        Thiago
+    Fill Text        css=input[data-testid='email']       ${EMAIL}
+    Fill Text        css=input[data-testid='password']    123456
+    Check Checkbox   css=input[data-testid='checkbox']
+    Click            css=button[data-testid='cadastrar']
     Sleep    5s

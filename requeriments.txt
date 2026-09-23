@@ -1,4 +1,5 @@
 click==8.5.0
+Faker==40.39.0
 grpcio==1.84.0
 grpcio-tools==1.84.0
 natsort==8.4.0
@@ -9,8 +10,10 @@ PyYAML==6.0.3
 robotframework==7.5
 robotframework-assertion-engine==5.0.1
 robotframework-browser==20.5.0
+robotframework-faker==6.0.0
 robotframework-pythonlibcore==4.6.0
 seedir==0.5.1
 setuptools==84.0.0
 typing_extensions==4.16.0
+tzdata==2026.4
 wrapt==2.4.1
