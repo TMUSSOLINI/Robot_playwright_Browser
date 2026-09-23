@@ -16,6 +16,9 @@ Abrir o navegador
 
 Ir para o site Serve Rest Front
     New Page       url=${SITE}
+    ${title}       Get Title  ==  Front - ServeRest
+    Log            ${title}
+
 
 
 Preencher os dados do novo usuário e cadastrar
