@@ -1,0 +1,38 @@
+{"level":"info","time":"2026-09-23T01:10:44.492Z","seq":1,"component":"browser-library","msg":"Listening on 127.0.0.1:58833"}
+{"level":"info","time":"2026-09-23T01:10:45.009Z","seq":2,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:45.250Z","seq":3,"component":"browser-library","msg":"Adding browser to stack: chromium, version: 153.0.8010.12"}
+{"level":"info","time":"2026-09-23T01:10:45.250Z","seq":4,"component":"browser-library","msg":"Adding 0 contexts to browser"}
+{"level":"info","time":"2026-09-23T01:10:45.251Z","seq":5,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:45.276Z","seq":6,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:45.276Z","seq":7,"component":"browser-library","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":"info","time":"2026-09-23T01:10:45.277Z","seq":8,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@c67a2016f030bd95dcf3f3d4ac393268\"},\"name\":\"chromium\",\"id\":\"browser=3720dc5c-209f-4995-b09d-c1b1cb4ba04d\",\"headless\":false}"}
+{"level":"info","time":"2026-09-23T01:10:45.277Z","seq":9,"component":"browser-library","msg":"Trace file: "}
+{"level":"info","time":"2026-09-23T01:10:45.301Z","seq":10,"component":"browser-library","msg":"Setting default timeout for context context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889 to 10000"}
+{"level":"info","time":"2026-09-23T01:10:45.301Z","seq":11,"component":"browser-library","msg":"Changed active context: context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889"}
+{"level":"info","time":"2026-09-23T01:10:45.301Z","seq":12,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:45.316Z","seq":13,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:45.317Z","seq":14,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@d708709ca60a9a4fec98541f987ab7cf\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@c67a2016f030bd95dcf3f3d4ac393268\"},\"name\":\"chromium\",\"id\":\"browser=3720dc5c-209f-4995-b09d-c1b1cb4ba04d\",\"headless\":false}"}
+{"level":"info","time":"2026-09-23T01:10:45.602Z","seq":15,"component":"browser-library","msg":"Video path: undefined"}
+{"level":"info","time":"2026-09-23T01:10:45.602Z","seq":16,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-23T01:10:47.448Z","seq":17,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:47.454Z","seq":18,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:47.455Z","seq":19,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=.btn-link in page."}
+{"level":"info","time":"2026-09-23T01:10:47.571Z","seq":20,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.589Z","seq":21,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.594Z","seq":22,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.597Z","seq":23,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.597Z","seq":24,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.600Z","seq":25,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.600Z","seq":26,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.603Z","seq":27,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.604Z","seq":28,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.607Z","seq":29,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","msg":"Changed active context: context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889"}
+{"level":"info","time":"2026-09-23T01:10:52.607Z","seq":30,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","msg":"Changing current active page: page=708c2bc4-138e-4563-a5b1-acc9c771f2f4"}
+{"level":"info","time":"2026-09-23T01:10:52.607Z","seq":31,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-23T01:10:52.611Z","seq":32,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.628Z","seq":33,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","msg":"Removed page=74329af1-b29f-40e0-9b7f-7b341d686344 from context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889 page stack"}
+{"level":"info","time":"2026-09-23T01:10:52.632Z","seq":34,"suite_id":"s1","suite_name":"Serve-Rest-Front","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.645Z","seq":35,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.645Z","seq":36,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-23T01:10:52.732Z","seq":37,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"started"}
+{"level":"info","time":"2026-09-23T01:10:52.989Z","seq":38,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"succeeded"}

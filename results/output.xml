@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.13.14 on win32)" generated="2026-09-22T22:10:43.574063" rpa="false" schemaversion="5">
+<suite id="s1" name="Serve-Rest-Front" source="C:\Users\AlmavivA\Desktop\Estudos\Robot_playwright\tests\serve-rest-front.robot">
+<test id="s1-t1" name="Login com sucesso Serve Rest Front" line="5">
+<kw name="Abrir o navegador" owner="serve-rest-front">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-09-22T22:10:43.929283" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\AlmavivA\\Desktop\\Estudos\\Robot_playwright\\results\\browser\\traces\\temp\\5b17bdeb-db3c-4bc3-9bca-b10f0029b85e"}</msg>
+<msg time="2026-09-22T22:10:43.963288" level="INFO">Starting Browser process C:\Users\AlmavivA\Desktop\Estudos\Robot_playwright\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58833</msg>
+<msg time="2026-09-22T22:10:45.259098" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\AlmavivA\\Desktop\\Estudos\\Robot_playwright\\results\\browser\\traces\\temp\\5b17bdeb-db3c-4bc3-9bca-b10f0029b85e"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-09-22T22:10:43.928427" elapsed="1.331951"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-09-22T22:10:45.273291" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-09-22T22:10:45.306011" level="INFO">Successfully created context. </msg>
+<msg time="2026-09-22T22:10:45.306320" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<arg>viewport={"width": 1280, "height": 720}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-09-22T22:10:45.261275" elapsed="0.045266"/>
+</kw>
+<status status="PASS" start="2026-09-22T22:10:43.927453" elapsed="1.379323"/>
+</kw>
+<kw name="Ir para o site Serve Rest Front" owner="serve-rest-front">
+<kw name="New Page" owner="Browser">
+<msg time="2026-09-22T22:10:47.451018" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev</msg>
+<arg>url=${SITE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-09-22T22:10:45.311717" elapsed="2.139520"/>
+</kw>
+<status status="PASS" start="2026-09-22T22:10:45.311027" elapsed="2.140333"/>
+</kw>
+<kw name="Preencher os dados do novo usuário e cadastrar" owner="serve-rest-front">
+<kw name="Click" owner="Browser">
+<msg time="2026-09-22T22:10:47.452971" level="INFO">Clicks the element 'css=.btn-link'.</msg>
+<arg>css=.btn-link</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-09-22T22:10:47.452361" elapsed="0.121092"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-22T22:10:52.575131" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-22T22:10:47.573673" elapsed="5.001694"/>
+</kw>
+<status status="PASS" start="2026-09-22T22:10:47.451812" elapsed="5.123780"/>
+</kw>
+<msg time="2026-09-22T22:10:52.602118" level="INFO">Switching context to context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889 in CURRENT</msg>
+<msg time="2026-09-22T22:10:52.610667" level="INFO">Successfully changed active context: context=58ee7bda-2579-4b45-b0e2-3ab2b2bde889</msg>
+<msg time="2026-09-22T22:10:52.634254" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-09-22T22:10:43.926686" elapsed="8.649593"/>
+</test>
+<status status="PASS" start="2026-09-22T22:10:43.575867" elapsed="9.060416"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Serve-Rest-Front" id="s1" pass="1" fail="0" skip="0">Serve-Rest-Front</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
