@@ -1,10 +1,12 @@
 *** Settings ***
 Library    Browser
 Library    FakerLibrary
+Library    DateTime
+Library    String
 
 *** Variables ***
 ${BROWSER}    chromium
-${HEADLESS}   false
+${HEADLESS}   true
 ${SITE}       https://front.serverest.dev
 
 *** Keywords ***
@@ -12,7 +14,13 @@ Abrir o navegador
     New Browser    browser=${BROWSER}
     ...            headless=${HEADLESS}
 
+    ${TRACE_NAME}  FakerLibrary.Uuid 4
+    ${NOW}         Get Current Date    result_format=%d-%m-%Y_%H%M%S
+    ${OUTPUT_DIR_NORM}    Replace String    ${OUTPUT_DIR}    \\    /
+
     New Context    viewport={"width": 1280, "height": 720}
+    ...            tracing=${OUTPUT_DIR_NORM}/evidencies/traces/${NOW}/${TRACE_NAME}.zip
+    ...            recordVideo={'dir': '${OUTPUT_DIR_NORM}/evidencies/videos/${NOW}'}
 
 Ir para o site Serve Rest Front
     New Page       url=${SITE}
