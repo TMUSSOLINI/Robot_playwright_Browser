@@ -1,12 +1,14 @@
 *** Settings ***
 Library    Browser
+# ...        timeout=5s
+...        enable_presenter_mode=${True}
 Library    FakerLibrary
 Library    DateTime
 Library    String
 
 *** Variables ***
 ${BROWSER}    chromium
-${HEADLESS}   true
+${HEADLESS}   false
 ${SITE}       https://front.serverest.dev
 
 *** Keywords ***
@@ -19,8 +21,8 @@ Abrir o navegador
     ${OUTPUT_DIR_NORM}    Replace String    ${OUTPUT_DIR}    \\    /
 
     New Context    viewport={"width": 1280, "height": 720}
-    ...            tracing=${OUTPUT_DIR_NORM}/evidencies/traces/${NOW}/${TRACE_NAME}.zip
-    ...            recordVideo={'dir': '${OUTPUT_DIR_NORM}/evidencies/videos/${NOW}'}
+    # ...            tracing=${OUTPUT_DIR_NORM}/evidencies/traces/${NOW}/${TRACE_NAME}.zip
+    # ...            recordVideo={'dir': '${OUTPUT_DIR_NORM}/evidencies/videos/${NOW}'}
 
 Ir para o site Serve Rest Front
     New Page       url=${SITE}
